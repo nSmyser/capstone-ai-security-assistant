@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Security Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+    <!-- Collapsible Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">AI Security Assistant</h2>
+            <button id="toggle-sidebar-btn" aria-label="Toggle sidebar">‹</button>
+        </div>
+
+        <button id="new-chat-btn">+ New Chat</button>
+
+        <ul id="chat-list" aria-label="Chat sessions"></ul>
+    </aside>
+
+    <!-- Main Chat Window -->
+    <main id="chat-area" role="main">
+        <div id="messages" role="log" aria-live="polite"></div>
+
+        <div id="chat-input-container">
+            <input id="chat-input" type="text" placeholder="Type your message..." autocomplete="off" />
+            <button id="send-btn">Send</button>
+        </div>
+    </main>
+
+</div>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+</html>
